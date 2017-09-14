@@ -1,0 +1,28 @@
+
+
+<h1> <%= "Welcome to Slackers! Please submit an article" %></h1>
+
+<form action="/articles/new" method="post">
+  <label for="article_name">Article Name:</label>
+  <input type="text" id="article_name" name="name">
+
+  <br>
+
+  <label for="article_url">Article URL:</label>
+  <input type="url" id="article_url" name="url">
+
+  <br>
+
+  <label for="article_description">Article Description:</label>
+
+  <br>
+
+  <textarea type="comment" id="article_description" name="description"></textarea>
+
+  <br>
+
+  <button type="submit">Add Article</button>
+</form>
+  <br>
+
+<a class="back" href="/">Back to All Articles</a>

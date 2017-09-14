@@ -1,0 +1,11 @@
+<h1>Welcome to Slackers! Here are today's articles</h1>
+
+<ol>
+<% @articles.each do |article| %>
+  <li><a href ="<%= article.url %>" target="_blank"> <%= "#{article.name}:"%></a> <%=  "#{article.description}"  %>
+  </li>
+
+<% end %>
+</ol>
+
+<a href="/articles/new">Add a New Article</a>
