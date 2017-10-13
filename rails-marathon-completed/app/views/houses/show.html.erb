@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%=@house.name%></h1>
+<h1><%=@house.author%></h1>
+<h1><%=@house.source%></h1>
+<h1><%=@house.motto%></h1>
+
+<%= link_to "Add a House Member", new_house_member_path(@house.id) %>
+
+<h1>Members</h1>
+<% @members.each do |member| %>
+  <li><%= member.first_name %></li>
+  <li><%= member.last_name %></li>
+  <li><%= member.created_at.strftime("%B %d %Y") %></li>
+
+<% end %>
